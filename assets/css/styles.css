@@ -44,19 +44,33 @@ a {
     border: 1px solid #2E80CE;
 }
 
+
 .btn:hover {
     opacity: 0.9;
     cursor: pointer;
 }
 
+
+.heading-lv2 {
+    color: #10375C;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.heading-lv3 {
+    color: #10375C;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
 /* ---------------Header-------------- */
 .header {
-    min-height: 100vh;
     background: var(--header-bg);
-    padding-top: 30px;
-    position: sticky;
-    top: -22px;
-    z-index: 1;
+    padding: 30px 0 170px;
 }
 
 .header-top {
@@ -183,7 +197,6 @@ a {
 
 .hero__desc {
     color: #C9D2DA;
-    ;
     font-size: 1.8rem;
     font-style: normal;
     margin-top: 22px;
@@ -215,4 +228,73 @@ a {
 
 .hero__media--small {
     margin-top: 65px;
+}
+
+/* --------------Service----------------- */
+
+.service {
+    padding: 170px 0;
+}
+
+.service__title,
+.service__desc {
+    text-align: center;
+    width: 468px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-desc {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66667; 
+}
+
+.service__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.service__image {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: url(<path-to-image>), lightgray 0px -1.3px / 100% 149.93% no-repeat;  
+}
+
+.service__list {
+}
+
+.service-item {
+    display: flex;
+    width: 470px;
+}
+
+.service-item:hover {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item__icon {
+    width: 60px;
+    height: 60px;
+    background-color: #EFF6FD;
+    border-radius: 50%;
+}
+
+.service-item__title {
+    margin-left: 19px;
+}
+
+
+.service-item p {
+    margin-top: 8px;
+}
+ 
+.service__btn {
+    margin-top: 55px
 }
