@@ -239,7 +239,7 @@ a {
 .service__title,
 .service__desc {
     text-align: center;
-    width: 468px; 
+    width: 468px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -247,7 +247,7 @@ a {
 .service-desc {
     font-size: 1.8rem;
     font-weight: 300;
-    line-height: 1.66667; 
+    line-height: 1.66667;
 }
 
 .service__row {
@@ -262,28 +262,42 @@ a {
     height: 570px;
     object-fit: cover;
     border-radius: 12px;
-    background: url(<path-to-image>), lightgray 0px -1.3px / 100% 149.93% no-repeat;  
+    background: url(<path-to-image>), lightgray 0px -1.3px / 100% 149.93% no-repeat;
 }
 
-.service__list {
-}
+.service__list {}
 
 .service-item {
     display: flex;
     width: 470px;
+    padding: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.25s;
 }
 
 .service-item:hover {
     position: relative;
-    border-radius: 10px;
     box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
 }
 
+.service-item:hover .service-item__icon {
+    background-color: #2E80CE;
+    color: #fff;
+}
+
 .service-item__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
     width: 60px;
     height: 60px;
-    background-color: #EFF6FD;
+    background: #EFF6FD;
+    color: #10375C;
     border-radius: 50%;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+    transition: 0.25s;
 }
 
 .service-item__title {
@@ -294,7 +308,152 @@ a {
 .service-item p {
     margin-top: 8px;
 }
- 
+
 .service__btn {
     margin-top: 55px
+}
+
+/* ==============Guide=============== */
+
+.guide {
+    padding: 100px 0;
+    background-color: #F6FBFF;
+}
+
+.guide__desc {
+    width: 468px;
+    margin-top: 18px;
+}
+
+.guide__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 86px;
+}
+
+.guide__item {
+    width: 370px;
+    padding: 43px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 16px solid #EAF6FF;
+    transition: 0.25s;
+}
+
+.guide__item:hover .guide__body--more>a {
+    color: #2E80CE;
+    font-weight: 400;
+}
+
+.guide__item:hover {
+    transform: translateY(-16px);
+    border: 16px solid #2E80CE;
+}
+
+.guide__item h3 {
+    margin-top: 18px;
+}
+
+.guide__item--desc {
+    margin-top: 28px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.guide__body--more {
+    margin-top: 18px;
+}
+
+.guide__body--more a {
+    color: #575F66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+/*=================Feature============= */
+
+.feature {
+    padding: 170px 0;
+}
+
+.feature__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature__img {
+    position: relative;
+}
+
+.feature__img--1 {
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.feature__img--2 {
+    position: absolute;
+    top: 121px;
+    right: -58px;
+    width: 332px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.feature__body {
+    width: 40%;
+    padding: 82px 0;
+}
+
+.feature__desc {
+    margin-top: 18px;
+}
+
+.feature__btn {
+    margin-top: 38px;
+}
+
+/* ----------------Member----------------- */
+.member {
+    text-align: center;
+}
+
+.member__btn {
+    margin-top: 38px;
+    padding: 15px 28px;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.member__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.member__image {
+    padding: 28px 4px 0;
+    width: 270px;
+    height: 318px;
+    background-color: #EAF6FF;
+    border-radius: 6px;
+}
+
+.member__name {
+    margin-top: 12px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #10375C;
+}
+
+.member__info {
+    font-size: 1.4rem;
 }
